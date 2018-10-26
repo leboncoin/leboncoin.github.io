@@ -50,12 +50,4 @@ class ArticleTile extends React.Component {
   }
 }
 
-export class Articles extends React.Component {
-  render() {
-    return this.props.articles.map(({ node }) => (
-      <ArticleTile article={node} />
-    ));
-  }
-}
-
 export default ArticleTile;

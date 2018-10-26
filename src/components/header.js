@@ -5,12 +5,9 @@ import LogoAlt from "../static/logo-alt.png"
 
 const menuItems = [
   {title: "Home", link: "#home"},
-  {title: "About", link: "#about"},
-  {title: "Portfolio", link: "#portfolio"},
-  {title: "Services", link: "#service"},
-  {title: "Prices", link: "#pricing"},
-  {title: "Team", link: "#team"},
-  {title: "Contact", link: "#contact"},
+  {title: "Blog", link: "#blog"},
+  {title: "Keys", link: "#keys"},
+  {title: "Projects", link: "#projects"}
 ];
 
 class Header extends React.Component {
@@ -19,7 +16,7 @@ class Header extends React.Component {
       <Navbar id={"nav"} className={"nav-transparent"}>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#index">
+            <a href="#home">
               <img className="logo" src={Logo} alt="logo"/>
               <img className="logo-alt" src={LogoAlt} alt="logo"/>
             </a>
@@ -28,7 +25,7 @@ class Header extends React.Component {
             <span/>
           </Navbar.Collapse>
         </Navbar.Header>
-        <Nav pullRight activeKey={1} className={"main-nav"}>
+        <Nav pullRight className={"main-nav"}>
           {menuItems.map((item, index) =>
             <NavItem key={index} eventKey={index} href={item.link}>
             {item.title}
