@@ -6,7 +6,7 @@ import Title from "../components/title"
 import { graphql } from "gatsby"
 import {MediumList} from "../components/medium"
 
-const IndexPage = () => (
+const IndexPage = ({data}) => (
   <Layout>
     <div id="about" className="section md-padding">
       <div className="container">
@@ -50,5 +50,4 @@ query {
       }
     }
   }
-}
-`
+}`;
