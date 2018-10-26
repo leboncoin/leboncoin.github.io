@@ -6,6 +6,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import './layout.css'
 import HomeWrapper from "./home/wrapper";
+import Background from '../images/background1.jpg'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,7 +31,7 @@ const Layout = ({ children }) => (
           <html lang="en" />
       </Helmet>
         <header id={"home"}>
-          <div className="bg-img" style={{backgroundImage: "url('../static/background1.jpg')"}}>
+          <div className="bg-img" style={{backgroundImage: `url(${Background})`}}>
             <div className="overlay"/>
           </div>
           <Header siteTitle={data.site.siteMetadata.title} />
@@ -39,8 +40,8 @@ const Layout = ({ children }) => (
         <div>
           {children}
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet"/>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossOrigin="anonymous"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossOrigin="anonymous"/>
           {/* jQuery Plugins*/}
           <script type="text/javascript" src="js/jquery.min.js"></script>
           <script type="text/javascript" src="js/bootstrap.min.js"></script>

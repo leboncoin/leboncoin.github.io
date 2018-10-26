@@ -1,8 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Tile from "../components/tile"
+import ArticleTile from "../components/article"
 import Title from "../components/title"
-import React from "react"
 import { graphql } from "gatsby"
 import {MediumList} from "../components/medium"
 
@@ -10,15 +10,21 @@ const IndexPage = () => (
   <Layout>
     <div id="about" className="section md-padding">
       <div className="container">
-        <Title title={"test"}/>
-        <Tile title={"test"} body={"Test text"}/>
+        <Title title={"About"}/>
+        <Tile title={"about1"} body={"Lorem ipsum"}/>
+      </div>
+    </div>
+    <div id="blog" className="section md-padding">
+      <div className="container">
+        <Title title={"Blog"}/>
+        <ArticleTile title={"Article 1"} body={"Article 1"}/>
       </div>
     </div>
     <div>
       <MediumList posts={data.allMediumPost.edges} />
     </div>
   </Layout>
-)
+);
 
 export default IndexPage
 
