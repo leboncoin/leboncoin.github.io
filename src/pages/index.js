@@ -1,13 +1,12 @@
-import React from "react"
-import Header from "./header"
-import HomeWrapper from "./home_wrapper"
+import React from 'react'
 
-export default () => <div>
-  <div>
-    <div className="bg-img" style={{backgroundImage: "url('../static/background1.jpg')"}}>
-      <div className="overlay"/>
-    </div>
-    <Header id={"home"}/>
+import Layout from '../components/layout'
+import HomeWrapper from '../components/home/wrapper';
+
+const IndexPage = () => (
+  <Layout>
     <HomeWrapper/>
-  </div>
-</div>
+  </Layout>
+)
+
+export default IndexPage
