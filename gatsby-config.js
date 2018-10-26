@@ -29,7 +29,7 @@ module.exports = {
       resolve: `gatsby-source-medium`,
       options: {
         username: `leboncoin-engineering-blog`,
-        limit: 200,
+        limit: 9,
       },
     },
     'gatsby-plugin-offline',

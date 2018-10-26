@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../components/layout'
 import Tile from "../components/tile"
-import ArticleTile from "../components/article"
+import {Articles} from "../components/article"
 import Title from "../components/title"
 import { graphql } from "gatsby"
-import {MediumList} from "../components/medium"
 
-const IndexPage = ({data}) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <div id="about" className="section md-padding">
       <div className="container">
@@ -14,14 +13,14 @@ const IndexPage = ({data}) => (
         <Tile title={"about1"} body={"Lorem ipsum"}/>
       </div>
     </div>
+
     <div id="blog" className="section md-padding">
       <div className="container">
         <Title title={"Blog"}/>
-        <ArticleTile title={"Article 1"} body={"Article 1"}/>
+        <div className="row">
+        <Articles articles={data.allMediumPost.edges} />
+        </div>
       </div>
-    </div>
-    <div>
-      <MediumList posts={data.allMediumPost.edges} />
     </div>
   </Layout>
 );
@@ -37,8 +36,9 @@ query {
         title
         slug
         medium_id
+        createdAt
         virtuals {
-          subtitle
+          totalClapCount
           previewImage {
             imageId
             originalWidth
