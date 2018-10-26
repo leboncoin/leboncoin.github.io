@@ -1,7 +1,6 @@
 import React from "react"
 import { Navbar, Nav, NavItem } from "react-bootstrap"
-import Logo from "../static/logo.png"
-import LogoAlt from "../static/logo-alt.png"
+import Logo from "../images/logo.svg"
 
 const menuItems = [
   {title: "Home", link: "#home"},
@@ -43,7 +42,7 @@ class Header extends React.Component {
             <a href="#home">
               <img
                 className={this.state.logo}
-                src={this.state.logo === "logo" ? Logo : LogoAlt}
+                src={Logo}
                 alt="logo"/>
             </a>
           </Navbar.Brand>
