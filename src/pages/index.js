@@ -4,7 +4,7 @@ import Tile from "../components/tile"
 import Title from "../components/title"
 import React from "react"
 import { graphql } from "gatsby"
-import Medium from "../components/medium"
+import {MediumList} from "../components/medium"
 
 const IndexPage = () => (
   <Layout>
@@ -15,9 +15,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div>
-    {data.allMediumPost.edges.map(({ node }, index) => (
-        <Medium article={node} />
-    ))}
+      <MediumList posts={data.allMediumPost.edges} />
     </div>
   </Layout>
 )
@@ -31,10 +29,13 @@ query {
       node {
         id
         title
+        slug
+        medium_id
         virtuals {
           subtitle
           previewImage {
             imageId
+            originalWidth
           }
         }
         author {
