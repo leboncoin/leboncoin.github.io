@@ -11,14 +11,41 @@ const menuItems = [
 ];
 
 class Header extends React.Component {
+  constructor(props){
+    super(props);
+    this.handleScroll = this.handleScroll.bind(this);
+    this.state = {
+      navClass: "nav-transparent",
+      logo: "logo-alt"
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll() {
+    this.setState({
+      navClass: window.scrollY > 20 ? "nav-fixed" : "nav-transparent",
+      logo: window.scrollY > 20 ? "logo" : "logo-alt"
+    })
+  }
+
   render() {
+    console.log(this.state)
     return (
-      <Navbar id={"nav"} className={"nav-transparent"}>
+      <Navbar id={"nav"} fixedTop className={this.state.navClass}>
         <Navbar.Header>
           <Navbar.Brand>
             <a href="#home">
-              <img className="logo" src={Logo} alt="logo"/>
-              <img className="logo-alt" src={LogoAlt} alt="logo"/>
+              <img
+                className={this.state.logo}
+                src={this.state.logo === "logo" ? Logo : LogoAlt}
+                alt="logo"/>
             </a>
           </Navbar.Brand>
           <Navbar.Collapse>
