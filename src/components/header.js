@@ -36,7 +36,6 @@ class Header extends React.Component {
   }
 
   render() {
-    console.log(this.state)
     return (
       <Navbar id={"nav"} fixedTop className={this.state.navClass}>
         <Navbar.Header>
