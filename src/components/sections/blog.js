@@ -40,9 +40,11 @@ export default () => {
               sectionName={"blog"}
               sectionTitle={"Blog"}
             >
-              {articles.map(({ node }, index) =>
-                <Article key={index} article={node} />
-              )}
+              <div className="row" style={{display: "flex", flexWrap: "wrap"}}>
+                {articles.map(({ node }, index) =>
+                  <Article key={index} article={node} />
+                )}
+              </div>
             </Section>
           )
         }

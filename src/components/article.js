@@ -5,7 +5,7 @@ import { faClock, faHeart } from "@fortawesome/free-solid-svg-icons";
 class ArticleTile extends React.Component {
   render() {
     return (
-      <div className="col-sm-4 col-md-4" style={{ height: 550 }}>
+      <div className="col-sm-4 col-md-4">
         <div className="blog">
           <div className="blog-img">
             <img
