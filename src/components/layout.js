@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import HomeWrapper from "./home/wrapper";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,10 +29,13 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <div className="bg-img" style={{backgroundImage: "url('../static/background1.jpg')"}}>
-          <div className="overlay"/>
-        </div>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <header id={"home"}>
+          <div className="bg-img" style={{backgroundImage: "url('../static/background1.jpg')"}}>
+            <div className="overlay"/>
+          </div>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <HomeWrapper/>
+        </header>
         <div>
           {children}
 

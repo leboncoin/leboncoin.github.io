@@ -28,9 +28,9 @@ class Header extends React.Component {
             <span/>
           </Navbar.Collapse>
         </Navbar.Header>
-        <Nav pullRight>
+        <Nav pullRight activeKey={1} className={"main-nav"}>
           {menuItems.map((item, index) =>
-            <NavItem key={index} eventKey={2} href={item.link}>
+            <NavItem key={index} eventKey={index} href={item.link}>
             {item.title}
             </NavItem>
           )}
