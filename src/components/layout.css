@@ -19,7 +19,7 @@ Table OF Contents
 4 > Header
 5 > About
 6 > Portfolio
-7 > Services
+7 > Projects
 8 >  Why choose us
 9 >  Numbers
 10 > Pricing
@@ -781,17 +781,21 @@ width: 100%;
 
 
 /*------------------------------------*\
-Services
+Projects
 \*------------------------------------*/
 
-.service {
+.project {
   position: relative;
   padding: 40px 20px 40px 70px;
   margin: 15px 0px;
   border: 1px solid #EEE;
 }
 
-.service i {
+.project a, .project a:hover, .project a:visited{
+  color: inherit;
+}
+
+.project svg {
   position: absolute;
   left: 20px;
   text-align: center;
@@ -800,7 +804,7 @@ Services
   border-radius: 50%;
 }
 
-.service:after {
+.project:after {
   content: "";
   background-color: #1C1D21;
   position: absolute;
@@ -813,16 +817,16 @@ Services
   transition: 0.2s width;
 }
 
-.service:hover:after {
+.project:hover:after {
   width: 100%;
 }
 
-.service h3 {
+.project h3 {
 -webkit-transition: 0.2s color;
 transition: 0.2s color;
 }
 
-.service:hover h3 {
+.project:hover h3 {
   color: #fff;
 }
 

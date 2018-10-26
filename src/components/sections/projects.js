@@ -1,18 +1,45 @@
-import Tile from "../tile";
 import Section from "./layout";
 import React from "react";
+import {graphql, StaticQuery} from "gatsby";
+import Project from "../project";
 
-class Projects extends React.Component {
-  render() {
-    return (
-      <Section
-        sectionName={"projects"}
-        sectionTitle={"Projects"}
-      >
-        <Tile title={"project1"} body={"Lorem ipsum"}/>
-      </Section>
-    )
+const GithubReposQuery = graphql`
+query {
+  allGithubRepos(sort: { fields: [stars], order: DESC } ){
+    edges {
+    	node {
+        id
+        name
+        url
+        stars
+        description
+      }
+    }
   }
-}
+}`;
 
-export default Projects
+export default () => {
+  return (
+    <StaticQuery
+      query={GithubReposQuery}
+      render={
+        data => {
+          const {edges: projects} = data.allGithubRepos;
+          return (
+            <Section
+              sectionName={"project"}
+              sectionTitle={"Project"}
+            >
+
+              <div className="row" style={{display: "flex", flexWrap: "wrap"}}>
+                {projects.map(({ node }, index) =>
+                  <Project key={index} project={node} />
+                )}
+              </div>
+            </Section>
+          )
+        }
+      }
+    />
+  )
+}
