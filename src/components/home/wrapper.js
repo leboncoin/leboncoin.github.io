@@ -11,7 +11,7 @@ class HomeWrapper extends React.Component {
               <div className="home-content">
                 <h1 className="white-text">LEBONCOIN ENGINEERING & DATA SCIENCE</h1>
                 <p className="white-text">Creative engineers and data scientists building a French virtual Flea Market for everyone.</p>
-                <button className="main-btn">Learn more</button>
+                <a className="btn main-btn" href="#blog">Learn more</a>
               </div>
             </Col>
           </Row>

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock, faHeart } from "@fortawesome/free-solid-svg-icons";
+import { faClock, faHeart } from "@fortawesome/free-regular-svg-icons";
 
 class ArticleTile extends React.Component {
   render() {

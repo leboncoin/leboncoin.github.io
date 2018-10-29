@@ -3,10 +3,10 @@ import { Navbar, Nav, NavItem } from "react-bootstrap"
 import Logo from "../images/logo.svg"
 
 const menuItems = [
-  {title: "Home", link: "#home"},
   {title: "Blog", link: "#blog"},
-  {title: "Keys", link: "#keys"},
-  {title: "Projects", link: "#projects"}
+  {title: "Projects", link: "#project"},
+  {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings"},
+  {title: "Careers", link: "https://www.welcometothejungle.co/companies/leboncoin/jobs"}
 ];
 
 class Header extends React.Component {

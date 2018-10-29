@@ -41,7 +41,7 @@ const Layout = ({ children }) => (
         </header>
         <div>
           {children}
-          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"/>
           {/* jQuery Plugins*/}
           <script type="text/javascript" src="js/jquery.min.js"></script>
           <script type="text/javascript" src="js/bootstrap.min.js"></script>
