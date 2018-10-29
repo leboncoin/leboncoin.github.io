@@ -13,14 +13,17 @@ exports.sourceNodes = ({ actions }) => {
     const instance = axios.create({
         baseURL: 'https://api.github.com/',
         timeout: 1000,
-        headers: {'Authorization': 'token ' + process.env.GITHUB_TOKEN}
+        headers: {
+            'Authorization': 'token ' + process.env.GITHUB_TOKEN,
+            'Accept': 'application/vnd.github.mercy-preview+json'
+        }
       });
 
     return instance.get(`orgs/leboncoin/repos`)
     .then(res => {
 
         res.data.forEach(item => {
-            if (item.forks == false){
+            if (item.topics.includes('leboncoin')){
                 createNode({
                 id: item.url,
                 url: item.html_url,
