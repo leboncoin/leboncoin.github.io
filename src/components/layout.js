@@ -8,6 +8,7 @@ import '../static/css/bootstrap.min.css'
 import './layout.css'
 import HomeWrapper from "./home/wrapper";
 import Background from '../images/background1.jpg'
+import Footer from "./footer";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -48,6 +49,7 @@ const Layout = ({ children }) => (
           <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
           <script type="text/javascript" src="js/main.js"></script>
         </div>
+        <Footer/>
       </>
     )}
   />
