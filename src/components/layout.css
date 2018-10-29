@@ -702,6 +702,10 @@ Projects
   color: #868F9B;
 }
 
+.project:hover p {
+  color: #FFF;
+}
+
 .project h3 {
   color: inherit;
 }
@@ -719,10 +723,10 @@ Projects
   color: black;
   background: #eff0f2;
   font-size: 13px;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding-left: 0.6em;
   padding-right: 0.6em;
-  border-radius: 16px;
+  border-radius: 5px;
   margin: 3px;
   display: inline-flex;
 }
