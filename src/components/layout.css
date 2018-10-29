@@ -701,6 +701,22 @@ Projects
   background: grey;
 }
 
+.number {
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.numberIcon {
+  color: #F56B2A;
+  font-size: 36px; 
+  margin-bottom: 20px;
+}
+
+.number h3 {  
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
 
 /*------------------------------------*\
 Blog
