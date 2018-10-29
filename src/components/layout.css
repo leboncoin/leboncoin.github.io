@@ -127,6 +127,11 @@ a:hover, a:focus {
   color: #FFF;
 }
 
+.white-subtext {
+  color: #FFF;
+  font-size: 20px;
+}
+
 ::-moz-selection {
   background-color: #F56B2A;
   color: #FFF;
@@ -602,11 +607,8 @@ header {
   text-align: center;
 }
 
-.home-content h1 {
-text-transform: uppercase;
-}
 .home-content button {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .header-wrapper h2 {
@@ -697,7 +699,7 @@ Projects
 }
 
 .project p {
-  color: inherit;
+  color: #868F9B;
 }
 
 .project h3 {
@@ -716,7 +718,7 @@ Projects
 .project span {
   color: black;
   background: #eff0f2;
-  font-size: 11px;
+  font-size: 13px;
   border-radius: 1rem;
   padding-left: 0.6em;
   padding-right: 0.6em;
@@ -1100,6 +1102,7 @@ Footer
 
 #footer {
   position: relative;
+	background-color: #474747;
 }
 
 .footer-logo {
@@ -1137,13 +1140,7 @@ color:#FFF;
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  margin: 0;
-}
-
-#footer-design {
-  text-align: center;
-  font-size: 11px;
-  text-transform: uppercase;
+  color: #FFF;
   margin: 0;
 }
 

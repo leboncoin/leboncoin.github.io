@@ -28,7 +28,7 @@ class ArticleTile extends React.Component {
                 {this.props.article.virtuals.totalClapCount}
               </li>
             </ul>
-            <h4>
+            <h3>
               {" "}
               <a
                 href={
@@ -42,7 +42,7 @@ class ArticleTile extends React.Component {
               >
                 {this.props.article.title}
               </a>
-            </h4>
+            </h3>
           </div>
         </div>
       </div>

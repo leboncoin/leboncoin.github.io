@@ -10,7 +10,7 @@ class Key extends React.Component {
         <div className="number">
           <FontAwesomeIcon className={"numberIcon"} icon={this.props.icon} size="3x" color={"blue"}/>
           <h3 className="white-text"><span className="counter">{this.props.number}</span></h3>
-          <span className="white-text">{this.props.type}</span>
+          <span className="white-subtext">{this.props.type}</span>
         </div>
       </Col>
     )
