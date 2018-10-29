@@ -38,7 +38,7 @@ export default () => {
               ))}
             </div>
             <div style={{textAlign: "center"}}>
-              <a href="https://medium.com/leboncoin-engineering-blog" target="_blank">
+              <a href="https://medium.com/leboncoin-engineering-blog" rel="noopener noreferrer" target="_blank">
                 <button className="main-btn">Read more</button>
               </a>
             </div>
