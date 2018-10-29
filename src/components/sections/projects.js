@@ -27,8 +27,8 @@ export default () => {
           const {edges: projects} = data.allGithubRepos;
           return (
             <Section
-              sectionName={"project"}
-              sectionTitle={"Project"}
+              sectionName={"projects"}
+              sectionTitle={"Projects"}
             >
 
               <div className="row" style={{display: "flex", flexWrap: "wrap"}}>
