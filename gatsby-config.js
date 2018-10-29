@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'gatsby-leboncoin',
+        short_name: 'leboncoin',
         start_url: '/',
         background_color: '#F56B2A',
         theme_color: '#F56B2A',
