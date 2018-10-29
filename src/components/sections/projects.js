@@ -30,7 +30,7 @@ export default () => {
           <Section sectionName={"projects"} sectionTitle={"Projects"}>
             <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>
               {projects.map(({ node }, index) => (
-                <Project key={index} project={node} />
+                <Project key={index} project={node} tagsNumber={3} />
               ))}
             </div>
           </Section>

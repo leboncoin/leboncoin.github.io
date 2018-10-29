@@ -10,7 +10,11 @@ export class ProjectTile extends React.Component {
             <FontAwesomeIcon icon={faGithub} />{" "}
             <h3>{this.props.project.name}</h3>
             <p>{this.props.project.description}</p>
-            {this.props.project.topics.map((topic) => <span>{topic}</span>)}
+            {
+              this.props.project.topics
+              .filter((i, index) => (index < this.props.tagsNumber))
+              .map((topic) => <span>{topic}</span>)
+            }
         </a>
       </div>
     );
