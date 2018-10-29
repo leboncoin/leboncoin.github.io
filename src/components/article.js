@@ -11,9 +11,7 @@ class ArticleTile extends React.Component {
             <img
               className="img-responsive"
               src={
-                "https://cdn-images-1.medium.com/max/" +
-                this.props.article.virtuals.previewImage.originalWidth +
-                "/" +
+                "https://cdn-images-1.medium.com/max/500/" +
                 this.props.article.virtuals.previewImage.imageId
               }
               alt="img"
