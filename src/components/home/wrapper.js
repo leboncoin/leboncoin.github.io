@@ -9,9 +9,9 @@ class HomeWrapper extends React.Component {
           <Row>
             <Col md={10} mdOffset={1}>
               <div className="home-content">
-                <h1 className="white-text">LEBONCOIN ENGINEERING & DATA SCIENCE</h1>
+                <h1 className="white-text">LEBONCOIN ENGINEERING<br/>& DATA SCIENCE</h1>
                 <p className="white-text">Creative engineers and data scientists building a French virtual Flea Market for everyone.</p>
-                <a className="btn main-btn" href="#blog">Learn more</a>
+                <a className="orange-btn" href="#blog">Learn more</a>
               </div>
             </Col>
           </Row>

@@ -4,7 +4,7 @@ import Logo from "../images/logo.svg"
 
 const menuItems = [
   {title: "Blog", link: "#blog"},
-  {title: "Projects", link: "#project"},
+  {title: "Projects", link: "#projects"},
   {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings"},
   {title: "Careers", link: "https://www.welcometothejungle.co/companies/leboncoin/jobs"}
 ];

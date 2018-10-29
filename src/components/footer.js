@@ -24,7 +24,7 @@ class Footer extends React.Component {
                 <li><a href="https://github.com/leboncoin" target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                 </a></li>
-                <li><a href="https://twitter.com/leboncoinEng" target="_blank">
+                <li><a href="https://medium.com/leboncoin-engineering-blog" target="_blank">
                   <FontAwesomeIcon icon={faMedium} />
                 </a></li>
                 <li><a href="https://twitter.com/leboncoinEng" target="_blank">
@@ -36,8 +36,7 @@ class Footer extends React.Component {
               </ul>
 
               <div className="footer-copyright">
-                <p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com"
-                                                                         target="_blank">Colorlib</a></p>
+                <p>Copyright 2018. All Rights Reserved.</p>
               </div>
 
             </div>

@@ -42,19 +42,43 @@ Table OF Contents
 	General
 \*------------------------------------*/
 
+@font-face {
+  font-family: 'CoreSansDS25';
+  src:  url('../static/fonts/core-sans-ds-25.woff2') format('woff2'),
+        url('../static/fonts/core-sans-ds-25.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CoreSansDS35';
+  src:  url('../static/fonts/core-sans-ds-35.woff2') format('woff2'),
+        url('../static/fonts/core-sans-ds-35.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CoreSansDS45';
+  src:  url('../static/fonts/core-sans-ds-45.woff2') format('woff2'),
+        url('../static/fonts/core-sans-ds-45.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'CoreSansDS';
+  src:  url('../static/fonts/core-sans-ds.woff2') format('woff2'),
+        url('../static/fonts/core-sans-ds.woff') format('woff');
+}
 
 /* -- typography -- */
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'CoreSansDS25', 'Open Sans', sans-serif;
   font-size: 16px;
+  font-weight: 600;
   line-height: 1.6;
   overflow-x: hidden;
   color: #868F9B;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'CoreSansDS35', 'Open Sans', sans-serif;
   font-weight: 700;
   margin-top: 0px;
   margin-bottom: 20px;
@@ -200,7 +224,7 @@ ul, ol {
 
 /* --  Buttons  -- */
 
-.main-btn, .white-btn, .outline-btn {
+.main-btn, .white-btn, .outline-btn, .orange-btn {
   display: inline-block;
   padding: 15px 35px;
   margin: 3px;
@@ -221,6 +245,11 @@ ul, ol {
   color: #10161A !important;
 }
 
+.orange-btn {
+  background: #F56B2A;
+  color: #FFF;
+}
+
 .outline-btn {
   background: transparent;
   color: #F56B2A !important;
@@ -231,7 +260,7 @@ ul, ol {
   opacity: 0.8;
 }
 
-.main-btn:hover {
+.orange-btn:hover {
   background-color: #FFF;
   color: #F56B2A;
 }
@@ -275,7 +304,7 @@ Navigation
 \*------------------------------------*/
 
 #nav {
-  padding: 10px 0px;
+  padding: 5px 0px;
   background: #F56B2A;
   -webkit-transition: 0.2s padding;
   transition: 0.2s padding;
@@ -310,7 +339,7 @@ Navigation
       padding: 0px 15px;
   }
   .main-nav li a {
-      font-size: 14px;
+      font-size: 16px;
       -webkit-transition: 0.2s color;
       transition: 0.2s color;
   }
@@ -728,7 +757,7 @@ Blog
 }
 
 .blog .blog-content {
-  padding: 20px 20px 40px;
+  padding: 20px 10px 40px;
 }
 
 .blog .blog-meta {
@@ -738,7 +767,7 @@ Blog
 .blog .blog-meta li {
   display: inline-block;
   font-size: 14px;
-  color: #10161A;
+  color: #868F9B;
   margin-right: 10px;
 }
 
@@ -1079,7 +1108,7 @@ Footer
 }
 
 .footer-logo>a>img {
-  max-height: 80px;
+  max-height: 60px;
 }
 
 .footer-follow {
@@ -1111,6 +1140,12 @@ color:#FFF;
   margin: 0;
 }
 
+#footer-design {
+  text-align: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0;
+}
 
 /*------------------------------------*\
 Responsive
