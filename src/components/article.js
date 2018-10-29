@@ -37,6 +37,8 @@ class ArticleTile extends React.Component {
                   "-" +
                   this.props.article.medium_id
                 }
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 {this.props.article.title}
               </a>
