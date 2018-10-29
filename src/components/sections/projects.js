@@ -13,6 +13,7 @@ const GithubReposQuery = graphql`
           url
           stars
           description
+          topics
         }
       }
     }

@@ -24,13 +24,16 @@ exports.sourceNodes = ({ actions }) => {
 
         res.data.forEach(item => {
             if (item.topics.includes('leboncoin')){
+                var filtered = item.topics.filter(function(value, index, arr){
+                    return value != "leboncoin";
+                });
                 createNode({
                 id: item.url,
                 url: item.html_url,
                 name: item.name,
                 description: item.description,
                 stars: item.stargazers_count,
-                topics: item.topics,
+                topics: filtered,
                 parent: null,
                 children: [],
                 internal: {

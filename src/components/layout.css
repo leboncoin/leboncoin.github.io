@@ -803,6 +803,10 @@ Projects
   color: inherit;
 }
 
+.project p {
+  color: black;
+}
+
 .project svg {
   position: absolute;
   left: 20px;
@@ -836,6 +840,37 @@ transition: 0.2s color;
 
 .project:hover h3 {
   color: #fff;
+}
+
+.project:hover p {
+  color: #fff;
+}
+
+.project p {
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
+}
+
+.project span {
+  color: black;
+  background: #eff0f2;
+  font-size: 11px;
+  border-radius: 1rem;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+  border-radius: 16px;
+  margin: 3px;
+  display: inline-flex;
+}
+
+.project:hover span {
+  color: #fff;
+  background: grey;
+}
+
+.project span {
+  -webkit-transition: 0.2s color;
+  transition: 0.2s color;
 }
 
 /*------------------------------------*\
