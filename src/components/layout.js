@@ -7,7 +7,7 @@ import Header from './header'
 import '../static/css/bootstrap.min.css'
 import './layout.css'
 import HomeWrapper from "./home/wrapper";
-import Background from '../images/background1.jpg'
+import Background from '../images/background-terrace.jpg'
 import Footer from "./footer";
 
 const Layout = ({ children }) => (

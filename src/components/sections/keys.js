@@ -1,6 +1,6 @@
 import Key from "../key";
 import Section from "./layout";
-import Background from "../../images/background2.jpg";
+import Background from "../../images/background-docker.jpg";
 import React from "react";
 import {Row} from "react-bootstrap";
 import {faServer, faRocket, faDatabase, faImages} from '@fortawesome/free-solid-svg-icons'
