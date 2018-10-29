@@ -13,7 +13,7 @@ export class ProjectTile extends React.Component {
             {
               this.props.project.topics
               .filter((i, index) => (index < this.props.tagsNumber))
-              .map((topic) => <span>{topic}</span>)
+              .map((topic, topicIndex) => <span key={topicIndex}>{topic}</span>)
             }
         </a>
       </div>
