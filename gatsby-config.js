@@ -6,6 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'leboncoin Engineering',
   },
+  pathPrefix: "/leboncoin",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -36,6 +37,5 @@ module.exports = {
         limit: 9,
       },
     },
-    'gatsby-plugin-offline',
   ],
 }
