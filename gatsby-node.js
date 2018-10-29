@@ -3,9 +3,9 @@ const axios = require('axios')
 const crypto = require('crypto')
 const report = require(`gatsby-cli/lib/reporter`);
 
-exports.sourceNodes = ({ boundActionCreators }) => {
+exports.sourceNodes = ({ actions }) => {
 
-    const { createNode } = boundActionCreators
+    const { createNode } = actions
 
     let activity = report.activityTimer(`Github: fetch repos data from the Github API`)
     activity.start()
