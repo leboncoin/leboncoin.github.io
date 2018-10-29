@@ -1,16 +1,14 @@
 
 const axios = require('axios')
 const crypto = require('crypto')
+const report = require(`gatsby-cli/lib/reporter`);
 
 exports.sourceNodes = ({ boundActionCreators }) => {
 
     const { createNode } = boundActionCreators
 
-    console.time(`fetch Github data`)
-    console.log('Using Github Token')
-    console.log(
-        `starting to fetch data from the Github API. Warning: This may take a long time.`
-    )
+    let activity = report.activityTimer(`Github: fetch repos data from the Github API`)
+    activity.start()
 
     const instance = axios.create({
         baseURL: 'https://api.github.com/',
@@ -22,7 +20,6 @@ exports.sourceNodes = ({ boundActionCreators }) => {
     .then(res => {
 
         res.data.forEach(item => {
-            console.log(item)
             if (item.forks == false){
                 createNode({
                 id: item.url,
@@ -44,7 +41,7 @@ exports.sourceNodes = ({ boundActionCreators }) => {
             }
         })
 
-        console.timeEnd(`fetch Github data`)
+        activity.end()
     })
     .catch(error => {
         console.timeEnd(error)
