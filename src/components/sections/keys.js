@@ -17,7 +17,7 @@ class Keys extends React.Component {
         </div>
         <Row>
           <Key icon={faServer} number={"2K+"} type={"VMs / Containers"}/>
-          <Key icon={faRocket} number={"12"} type={"Throughput Gbps"}/>
+          <Key icon={faRocket} number={"12Gbps"} type={"Throughput"}/>
           <Key icon={faDatabase} number={"6To"} type={"Database"}/>
           <Key icon={faImages} number={"300M"} type={"Pictures"}/>
         </Row>
