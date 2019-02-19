@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: 'leboncoin Engineering',
   },
-  pathPrefix: "/leboncoin",
+  pathPrefix: "/",
   plugins: [
     'gatsby-plugin-react-helmet',
     {
