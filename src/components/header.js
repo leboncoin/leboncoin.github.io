@@ -5,8 +5,8 @@ import Logo from "../images/logo.svg"
 const menuItems = [
   {title: "Blog", link: "#blog"},
   {title: "Projects", link: "#projects"},
-  {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings"},
-  {title: "Careers", link: "https://www.welcometothejungle.co/companies/leboncoin/jobs"}
+  {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
+  {title: "Careers", link: "https://www.welcometothejungle.co/companies/leboncoin/jobs", target: "_blank"}
 ];
 
 class Header extends React.Component {
@@ -70,7 +70,7 @@ class Header extends React.Component {
         <Navbar.Collapse>
           <Nav pullRight className={"main-nav"} onSelect={this.closeNav}>
             {menuItems.map((item, index) =>
-              <NavItem key={index} eventKey={index} href={item.link}>
+              <NavItem key={index} eventKey={index} href={item.link} target={item.target || "_self" }>
                 {item.title}
               </NavItem>
             )}
