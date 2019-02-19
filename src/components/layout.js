@@ -43,11 +43,11 @@ const Layout = ({ children }) => (
           {children}
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet"/>
           {/* jQuery Plugins*/}
-          <script type="text/javascript" src="js/jquery.min.js"></script>
-          <script type="text/javascript" src="js/bootstrap.min.js"></script>
-          <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-          <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
-          <script type="text/javascript" src="js/main.js"></script>
+          <script type="text/javascript" src="static/js/jquery.min.js"></script>
+          <script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+          <script type="text/javascript" src="static/js/owl.carousel.min.js"></script>
+          <script type="text/javascript" src="static/js/jquery.magnific-popup.js"></script>
+          <script type="text/javascript" src="static/js/main.js"></script>
         </div>
         <Footer/>
       </>
