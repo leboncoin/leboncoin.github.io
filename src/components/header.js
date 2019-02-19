@@ -6,7 +6,7 @@ const menuItems = [
   {title: "Blog", link: "#blog"},
   {title: "Projects", link: "#projects"},
   {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
-  {title: "Careers", link: "https://www.welcometothejungle.co/companies/leboncoin/jobs", target: "_blank"}
+  {title: "Careers", link: "https://recrutement.leboncoin.fr/departments/it-data", target: "_blank"}
 ];
 
 class Header extends React.Component {
