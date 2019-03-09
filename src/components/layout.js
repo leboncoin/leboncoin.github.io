@@ -13,25 +13,25 @@ import Footer from "./footer";
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query SiteMetaQuery {
         site {
           siteMetadata {
-            title
+            title,
+            description,
+            keywords
           }
         }
       }
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'Creative engineers and data scientists building a French virtual Flea Market for everyone.' },
-            { name: 'keywords', content: 'leboncoin, marketplace, technologies, devops, data, golang, react, postgres' },
-          ]}
-        >
+        <Helmet>
           <html lang="en" />
-      </Helmet>
+          <meta charSet="utf-8" />
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content={data.site.siteMetadata.description} />
+          <meta name="keywords" content={data.site.siteMetadata.keywords} />
+        </Helmet>
         <header id={"home"}>
           <div className="bg-img" style={{backgroundImage: `url(${Background})`}}>
             <div className="overlay"/>

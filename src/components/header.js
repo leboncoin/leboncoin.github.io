@@ -1,13 +1,7 @@
 import React from "react"
 import {Navbar, Nav, NavItem} from "react-bootstrap"
 import Logo from "../images/logo.svg"
-
-const menuItems = [
-  {title: "Blog", link: "#blog"},
-  {title: "Projects", link: "#projects"},
-  {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
-  {title: "Careers", link: "https://recrutement.leboncoin.fr/departments/it-data", target: "_blank"}
-];
+import { StaticQuery, graphql } from 'gatsby'
 
 class Header extends React.Component {
   constructor(props) {
@@ -48,37 +42,51 @@ class Header extends React.Component {
 
   render() {
     return (
-      <Navbar
-        id={"nav"}
-        fixedTop
-        className={this.state.navClass}
-        onToggle={this.setNavExpanded}
-        expanded={this.state.navExpanded}
-        collapseOnSelect
-      >
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="#home">
-              <img
-                className={this.state.logo}
-                src={Logo}
-                alt="logo"/>
-            </a>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight className={"main-nav"} onSelect={this.closeNav}>
-            {menuItems.map((item, index) =>
-              <NavItem key={index} eventKey={index} href={item.link} target={item.target || "_self" }>
-                {item.title}
-              </NavItem>
-            )}
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
-    )
-  }
+      <StaticQuery
+      query={graphql`
+        query MenuItemsQuery {
+          site {
+            siteMetadata {
+              menu {
+                title,
+                link
+              }
+            }
+          }
+        }`}
+      render={data => (
+        <Navbar
+          id={"nav"}
+          fixedTop
+          className={this.state.navClass}
+          onToggle={this.setNavExpanded}
+          expanded={this.state.navExpanded}
+          collapseOnSelect
+        >
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#home">
+                <img
+                  className={this.state.logo}
+                  src={Logo}
+                  alt="logo"/>
+              </a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Nav pullRight className={"main-nav"} onSelect={this.closeNav}>
+              {data.site.siteMetadata.menu.map((item, index) =>
+                <NavItem key={index} eventKey={index} href={item.link} target={item.target || "_self" }>
+                  {item.title}
+                </NavItem>
+              )}
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+    )}
+    />
+  )}
 }
 
 export default Header
