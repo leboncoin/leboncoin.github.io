@@ -44,26 +44,26 @@ Table OF Contents
 
 @font-face {
     font-family: 'CoreSansDS25';
-    src: url('../static/fonts/core-sans-ds-25.woff2') format('woff2'),
-    url('../static/fonts/core-sans-ds-25.woff') format('woff');
+    src: url('../fonts/core-sans-ds-25.woff2') format('woff2'),
+    url('../fonts/core-sans-ds-25.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CoreSansDS35';
-    src: url('../static/fonts/core-sans-ds-35.woff2') format('woff2'),
-    url('../static/fonts/core-sans-ds-35.woff') format('woff');
+    src: url('../fonts/core-sans-ds-35.woff2') format('woff2'),
+    url('../fonts/core-sans-ds-35.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CoreSansDS45';
-    src: url('../static/fonts/core-sans-ds-45.woff2') format('woff2'),
-    url('../static/fonts/core-sans-ds-45.woff') format('woff');
+    src: url('../fonts/core-sans-ds-45.woff2') format('woff2'),
+    url('../fonts/core-sans-ds-45.woff') format('woff');
 }
 
 @font-face {
     font-family: 'CoreSansDS';
-    src: url('../static/fonts/core-sans-ds.woff2') format('woff2'),
-    url('../static/fonts/core-sans-ds.woff') format('woff');
+    src: url('../fonts/core-sans-ds.woff2') format('woff2'),
+    url('../fonts/core-sans-ds.woff') format('woff');
 }
 
 /* -- typography -- */
