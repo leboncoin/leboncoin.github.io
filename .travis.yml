@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+  - node_modules
+before_deploy:
+  - "npm run pre-deploy"
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local_dir: public
+  keep-history: true
+  target-branch: master
+  on:
+    branch: develop
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+script:
+  - "npm run build"
+branches:
+  except:
+  - master
