@@ -5,7 +5,15 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: 'leboncoin Engineering',
-  },
+    description: 'Creative engineers and data scientists building a French virtual Flea Market for everyone.' ,
+    keywords: 'leboncoin, marketplace, technologies, devops, data, golang, react, postgres',
+    menu: [
+      {title: "Blog", link: "#blog"},
+      {title: "Projects", link: "#projects"},
+      {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
+      {title: "Careers", link: "https://recrutement.leboncoin.fr/departments/it-data", target: "_blank"}
+    ],
+  },  
   pathPrefix: "/",
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,12 +29,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-leboncoin',
-        short_name: 'leboncoin',
+        name: 'leboncoin tech',
+        short_name: 'leboncoin tech',
         start_url: '/',
         background_color: '#F56B2A',
         theme_color: '#F56B2A',
-        display: 'minimal-ui',
+        display: 'fullscreen',
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
     },
