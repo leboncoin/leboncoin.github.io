@@ -265,7 +265,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 35px;
+    margin-top: 5px;
     display: block;
 }
 
@@ -287,6 +288,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
     }
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
+    }
+    .navbar-brand {
+        margin: 7px 0 0 12px;
+    }
+    .navbar-brand .logo, .navbar-brand .logo-alt {
+        max-height: 25px;
     }
 }
 
@@ -1467,7 +1474,7 @@ header {
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+    max-height: 45px;
 }
 
 .footer-follow {
