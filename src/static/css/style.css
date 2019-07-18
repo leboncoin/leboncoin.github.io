@@ -1488,6 +1488,10 @@ header {
     margin-bottom: 13px;
 }
 
+.footer-follow li:last-of-type {
+    margin-right: 0;
+}
+
 .footer-follow li a {
   display: inline-block;
   width: 50px;
