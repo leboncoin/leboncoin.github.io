@@ -43,43 +43,45 @@ Table OF Contents
 \*------------------------------------*/
 
 @font-face {
-    font-family: 'CoreSansDS25';
-    src: url('../fonts/core-sans-ds-25.woff2') format('woff2'),
-    url('../fonts/core-sans-ds-25.woff') format('woff');
+    font-family: 'PSM';
+    src: url("../fonts/psm/PSM-Regular.woff2") format("woff2"), url("../fonts/psm/PSM-Regular.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'CoreSansDS35';
-    src: url('../fonts/core-sans-ds-35.woff2') format('woff2'),
-    url('../fonts/core-sans-ds-35.woff') format('woff');
+    font-family:"PSM Light";
+    src:url("../fonts/psm/PSM-Light.woff2") format("woff2"), url("../fonts/psm/PSM-Light.woff") format("woff");
+    font-style:normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'CoreSansDS45';
-    src: url('../fonts/core-sans-ds-45.woff2') format('woff2'),
-    url('../fonts/core-sans-ds-45.woff') format('woff');
+    font-family: 'PSM Bold';
+    src: url("../fonts/psm/PSM-Bold.woff2") format("woff2"), url("../fonts/psm/PSM-Bold.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'CoreSansDS';
-    src: url('../fonts/core-sans-ds.woff2') format('woff2'),
-    url('../fonts/core-sans-ds.woff') format('woff');
+    font-family: 'PSM Italic';
+    src: url("../fonts/psm/PSM-Italic.woff2") format("woff2"), url("../fonts/psm/PSM-Italic.woff") format("woff");
+    font-style: normal;
+    font-display: swap;
 }
 
 /* -- typography -- */
 
 body {
-    font-family: 'CoreSansDS25', 'Open Sans', sans-serif;
+    font-family: 'PSM Light', 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 600;
     line-height: 1.6;
     overflow-x: hidden;
     color: #868F9B;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'CoreSansDS35', 'Open Sans', sans-serif;
-    font-weight: 700;
+    font-family: 'PSM', 'Open Sans', sans-serif;
     margin-top: 0px;
     margin-bottom: 20px;
     color: #10161A;
@@ -276,7 +278,8 @@ Logo
 }
 
 .navbar-brand .logo, .navbar-brand .logo-alt {
-    max-height: 50px;
+    max-height: 35px;
+    margin-top: 5px;
     display: block;
 }
 
@@ -296,6 +299,12 @@ Logo
     #nav.nav-transparent .navbar-brand .logo {
         display: block !important;
     }
+    .navbar-brand {
+        margin: 7px 0 0 12px;
+    }
+    .navbar-brand .logo, .navbar-brand .logo-alt {
+        max-height: 25px;
+    }
 }
 
 /*------------------------------------*\
@@ -303,6 +312,7 @@ Navigation
 \*------------------------------------*/
 
 #nav {
+    font-family: 'PSM', 'Open Sans', sans-serif;
     padding: 5px 0px;
     background: #F56B2A;
     -webkit-transition: 0.2s padding;
@@ -893,7 +903,13 @@ Footer
 }
 
 .footer-logo > a > img {
-    max-height: 60px;
+    max-height: 45px;
+}
+
+@media only screen and (max-width: 767px) {
+    .footer-logo > a > img {
+        max-height: 35px;
+    }
 }
 
 .footer-follow {
@@ -905,6 +921,10 @@ Footer
     display: inline-block;
     margin-right: 10px;
     margin-bottom: 13px;
+}
+
+.footer-follow li:last-of-type {
+    margin-right: 0;
 }
 
 .footer-follow li a {
@@ -919,6 +939,7 @@ Footer
 }
 
 .footer-copyright p {
+    font-family: 'PSM Italic', 'Open Sans', sans-serif;
     text-align: center;
     font-size: 14px;
     text-transform: uppercase;
