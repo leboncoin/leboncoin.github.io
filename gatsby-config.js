@@ -11,9 +11,9 @@ module.exports = {
       {title: "Blog", link: "#blog"},
       {title: "Projects", link: "#projects"},
       {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
-      {title: "Careers", link: "https://recrutement.leboncoin.fr/departments/it-data", target: "_blank"}
+      {title: "Careers", link: "https://leboncoingroupe.com/rejoignez-nous/", target: "_blank"}
     ],
-  },  
+  },
   pathPrefix: "/",
   plugins: [
     'gatsby-plugin-react-helmet',
