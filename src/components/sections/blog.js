@@ -5,19 +5,14 @@ import Article from "../article";
 
 const mediumQuery = graphql`
   query {
-    allMediumPost(sort: { fields: [createdAt], order: DESC }) {
+    allMediumFeed(sort: {fields: date, order: DESC}, limit: 9) {
       edges {
         node {
           title
           slug
-          medium_id
-          createdAt
-          virtuals {
-            totalClapCount
-            previewImage {
-              imageId
-            }
-          }
+          date(formatString: "YYYY-MM-DD")
+          thumbnail
+          link
         }
       }
     }
@@ -29,7 +24,7 @@ export default () => {
     <StaticQuery
       query={mediumQuery}
       render={data => {
-        const { edges: articles } = data.allMediumPost;
+        const { edges: articles } = data.allMediumFeed;
         return (
           <Section sectionName={"blog"} sectionTitle={"Blog"}>
             <div className="row" style={{ display: "flex", flexWrap: "wrap" }}>

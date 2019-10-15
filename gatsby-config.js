@@ -5,15 +5,28 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: 'leboncoin Engineering',
-    description: 'Creative engineers and data scientists building a French virtual Flea Market for everyone.' ,
+    description: 'Creative engineers and data scientists building a French virtual Flea Market for everyone.',
     keywords: 'leboncoin, marketplace, technologies, devops, data, golang, react, postgres',
-    menu: [
-      {title: "Blog", link: "#blog"},
-      {title: "Projects", link: "#projects"},
-      {title: "Events", link: "https://www.welcometothejungle.co/companies/leboncoin/meetings", target: "_blank"},
-      {title: "Careers", link: "https://recrutement.leboncoin.fr/departments/it-data", target: "_blank"}
+    menu: [{
+        title: "Blog",
+        link: "#blog"
+      },
+      {
+        title: "Projects",
+        link: "#projects"
+      },
+      {
+        title: "Events",
+        link: "https://www.welcometothejungle.co/companies/leboncoin/meetings",
+        target: "_blank"
+      },
+      {
+        title: "Careers",
+        link: "https://leboncoingroupe.com/rejoignez-nous/",
+        target: "_blank"
+      }
     ],
-  },  
+  },
   pathPrefix: "/",
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -39,10 +52,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-medium`,
+      resolve: 'gatsby-source-medium-feed',
       options: {
-        username: `leboncoin-engineering-blog`,
-        limit: 9,
+        userName: 'leboncoin-engineering-blog',
+        name: 'MediumFeed',
       },
     },
   ],
