@@ -80,11 +80,31 @@ body {
     color: #868F9B;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        font-family: 'PSM Light', 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        overflow-x: hidden;
+        color: #FFFFFF;
+        background-color: #262626;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'PSM', 'Open Sans', sans-serif;
     margin-top: 0px;
     margin-bottom: 20px;
     color: #10161A;
+}
+
+@media (prefers-color-scheme: dark) {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'PSM', 'Open Sans', sans-serif;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        color: #FFFFFF;
+    }
 }
 
 h1 {
@@ -119,6 +139,15 @@ a:hover, a:focus {
     outline: none;
     opacity: 0.8;
     color: #F56B2A;
+}
+
+@media (prefers-color-scheme: dark) {
+    a:hover {
+        text-decoration: none;
+        outline: none;
+        opacity: 1;
+        color: #F56B2A;
+    }
 }
 
 .main-color {
@@ -190,6 +219,7 @@ ul, ol {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 .bg-img .overlay {
@@ -570,9 +600,29 @@ Projects
     color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+    .project {
+        position: relative;
+        padding: 40px 20px 40px 70px;
+        margin: 15px 0px;
+        height: 90%;
+        border: 1px solid #EEE;
+        display: block;
+        color: #FFFFFF;
+        background-color: #262626;
+    }
+}
+
 .project:hover {
     color: #fff;
     background: #1C1D21;
+}
+
+@media (prefers-color-scheme: dark) {
+    .project:hover {
+        color: #FFFFFF;
+        background: #434343;
+    }
 }
 
 .project a, .project a:hover, .project a:visited {
@@ -611,9 +661,29 @@ Projects
   display: inline-flex;
 }
 
+@media (prefers-color-scheme: dark) {
+  .project span {
+    color: #FFFFFF;
+    background: #434343;
+    font-size: 13px;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
+    border-radius: 5px;
+    margin: 3px;
+    display: inline-flex;
+  }
+}
+
 .project:hover span {
     color: #fff;
     background: grey;
+}
+
+@media (prefers-color-scheme: dark) {
+    .project:hover span {
+        color: #fff;
+        background: #F56B2A;
+    }
 }
 
 .number {
@@ -641,6 +711,13 @@ Blog
     margin: 15px 0px;
 }
 
+@media (prefers-color-scheme: dark) {
+    .blog {
+        background-color: #262626;
+        margin: 15px 0px;
+    }
+}
+
 .blog .blog-content {
     padding: 20px 10px 40px;
 }
@@ -654,6 +731,15 @@ Blog
     font-size: 14px;
     color: #868F9B;
     margin-right: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .blog .blog-meta li {
+        display: inline-block;
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-right: 10px;
+    }
 }
 
 .blog .blog-meta li i {
