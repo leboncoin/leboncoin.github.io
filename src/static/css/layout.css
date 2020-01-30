@@ -217,7 +217,7 @@ ul, ol {
     bottom: 0;
     z-index: -1;
     background-position: center;
-    background-size: cover;
+    background-size: initial;
     background-attachment: fixed;
 
 }
@@ -1064,4 +1064,12 @@ Responsive
         float: none;
         text-align: center;
     }
+}
+
+.monthinfo {
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2rem;
 }

@@ -12,7 +12,7 @@ exports.sourceNodes = ({ actions }) => {
 
     const instance = axios.create({
         baseURL: 'https://api.github.com/',
-        timeout: 1000,
+        timeout: 2000,
         headers: {
             'Authorization': 'token ' + process.env.GITHUB_TOKEN,
             'Accept': 'application/vnd.github.mercy-preview+json'

@@ -5,7 +5,7 @@ import {
   faGithub,
   faMedium,
   faTwitter,
-} from "@fortawesome/fontawesome-free-brands";
+} from "@fortawesome/free-brands-svg-icons";
 import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/fontawesome-free-brands";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export class ProjectTile extends React.Component {
   render() {

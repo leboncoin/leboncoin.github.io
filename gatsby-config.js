@@ -12,6 +12,10 @@ module.exports = {
         link: "#blog"
       },
       {
+        title: "Videos",
+        link: "#youtube"
+      },
+      {
         title: "Projects",
         link: "#projects"
       },
@@ -56,6 +60,14 @@ module.exports = {
       options: {
         userName: 'leboncoin-engineering-blog',
         name: 'MediumFeed',
+      },
+    },
+    {
+      resolve: `gatsby-source-youtube-v2`,
+      options: {
+        channelId: ['UCZy9sdQo0rfO9Qk62P2_8IQ'],
+        apiKey: process.env.YOUTUBE_TOKEN,
+        maxVideos: 50
       },
     },
   ],
