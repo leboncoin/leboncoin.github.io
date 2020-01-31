@@ -15,7 +15,7 @@ const youtubeQuery = graphql`
           title
           description
           videoId
-          publishedAt
+          publishedAt(formatString: "YYYY-MM-DD")
         }
       }
     }
@@ -37,7 +37,7 @@ export default () => {
             </div>
             <div style={{ textAlign: "center" }}>
               <a
-                href="https://youtube.com/"
+                href="https://youtube.com/channel/UCRViR3UxUWMRwujhNVxS6ig"
                 rel="noopener noreferrer"
                 target="_blank"
               >
