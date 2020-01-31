@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 class Title extends React.Component {
   render() {
@@ -6,8 +6,8 @@ class Title extends React.Component {
       <div className="section-header text-center">
         <h2 className="title">{this.props.title}</h2>
       </div>
-    )
+    );
   }
 }
 
-export default Title
+export default Title;

@@ -5,7 +5,7 @@ import YoutubeTile from "../youtube";
 
 const youtubeQuery = graphql`
   query {
-    allYoutubeVideo(sort: {fields: publishedAt, order: DESC}, limit: 9) {
+    allYoutubeVideo(sort: { fields: publishedAt, order: DESC }, limit: 9) {
       edges {
         node {
           thumbnail {
@@ -35,8 +35,12 @@ export default () => {
                 <YoutubeTile key={index} video={node} />
               ))}
             </div>
-            <div style={{textAlign: "center"}}>
-              <a href="https://youtube.com/" rel="noopener noreferrer" target="_blank">
+            <div style={{ textAlign: "center" }}>
+              <a
+                href="https://youtube.com/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <button className="main-btn">See more</button>
               </a>
             </div>

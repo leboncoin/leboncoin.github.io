@@ -4,13 +4,14 @@ import Logo from "../images/logo.svg";
 import {
   faGithub,
   faMedium,
-  faTwitter,
+  faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 import { faGlobeAmericas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class Footer extends React.Component {
   render() {
+    const currentyear = new Date().getFullYear();
     return (
       <footer id="footer" className="sm-padding bg-dark">
         <div className="container">
@@ -62,7 +63,7 @@ class Footer extends React.Component {
               </ul>
 
               <div className="footer-copyright">
-                <p>Copyright 2019. All Rights Reserved.</p>
+                <p>{"Copyright " + currentyear + ". All Rights Reserved."}</p>
               </div>
             </div>
           </Row>

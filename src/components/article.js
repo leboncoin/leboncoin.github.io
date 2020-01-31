@@ -17,8 +17,7 @@ class ArticleTile extends React.Component {
           <div className="blog-content">
             <ul className="blog-meta">
               <li>
-                <FontAwesomeIcon icon={faClock} />{" "}
-                {this.props.article.date}
+                <FontAwesomeIcon icon={faClock} /> {this.props.article.date}
               </li>
             </ul>
             <h3>

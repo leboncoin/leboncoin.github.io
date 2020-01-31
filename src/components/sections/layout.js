@@ -3,15 +3,15 @@ import React from "react";
 
 class Section extends React.Component {
   render() {
-    return(
+    return (
       <div id={this.props.sectionName} className="section md-padding">
         <div className="container">
-          {this.props.sectionTitle && <Title title={this.props.sectionTitle}/>}
+          {this.props.sectionTitle && <Title title={this.props.sectionTitle} />}
           {this.props.children}
         </div>
       </div>
-    )
+    );
   }
 }
 
-export default Section
+export default Section;
