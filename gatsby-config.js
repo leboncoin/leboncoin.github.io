@@ -68,9 +68,7 @@ module.exports = {
     {
       resolve: `gatsby-source-youtube-v2`,
       options: {
-        // Still two channels because there is no video on tech channel which
-        // makes gatsby fail to build
-        channelId: ["UCZy9sdQo0rfO9Qk62P2_8IQ", "UCRViR3UxUWMRwujhNVxS6ig"],
+        channelId: ["UCRViR3UxUWMRwujhNVxS6ig"],
         apiKey: process.env.YOUTUBE_TOKEN,
         maxVideos: 50
       }
