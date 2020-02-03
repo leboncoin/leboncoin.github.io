@@ -5,7 +5,7 @@ import Article from "../article";
 
 const mediumQuery = graphql`
   query {
-    allMediumFeed(sort: {fields: date, order: DESC}, limit: 9) {
+    allMediumFeed(sort: { fields: date, order: DESC }, limit: 9) {
       edges {
         node {
           title
@@ -32,8 +32,12 @@ export default () => {
                 <Article key={index} article={node} />
               ))}
             </div>
-            <div style={{textAlign: "center"}}>
-              <a href="https://medium.com/leboncoin-engineering-blog" rel="noopener noreferrer" target="_blank">
+            <div style={{ textAlign: "center" }}>
+              <a
+                href="https://medium.com/leboncoin-engineering-blog"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <button className="main-btn">Read more</button>
               </a>
             </div>
