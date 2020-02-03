@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>leboncoin.tech</h1>
+  <h1>:computer: leboncoin.tech</h1>
 
   [![Build Status](https://travis-ci.org/leboncoin/leboncoin.github.io.svg?branch=develop)](https://travis-ci.org/leboncoin/leboncoin.github.io)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/leboncoin/leboncoin.github.io/blob/develop/LICENSE)
@@ -10,7 +10,7 @@
 </div>
 
 
-## Setup
+## :wrench: Setup
 
 Use your package manager or npm to install gatsby-cli:
 
@@ -24,7 +24,7 @@ Then install all the dependencies:
 $ npm install 
 ```
 
-## Required Environment
+## :key: Required Environment
 
 This project requires two environment variables to work
 properly:
