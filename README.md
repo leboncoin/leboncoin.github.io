@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>:computer: leboncoin.tech</h1>
+  <h1>leboncoin.tech</h1>
 
   [![Build Status](https://travis-ci.org/leboncoin/leboncoin.github.io.svg?branch=develop)](https://travis-ci.org/leboncoin/leboncoin.github.io)
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/leboncoin/leboncoin.github.io/blob/develop/LICENSE)
@@ -37,7 +37,7 @@ properly:
   An API key for the YouTube API. This is used to fetch
   the latest videos from our YouTube channel.
 
-## Start
+## :tada: Start
 
 Once all the dependencies have been installed and the
 environment variables set, you can run gatsby in dev
@@ -51,7 +51,7 @@ This will ensure the page is reloaded and the bundles
 recompiled with every change without having to restart
 Gatsby. 
 
-## CI/CD
+## :zap: CI/CD
 
 The `develop` branch gets merged every day into the `master` branch, 
 effectively redeploying the site and fetching the new data. 
