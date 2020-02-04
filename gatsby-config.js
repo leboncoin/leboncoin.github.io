@@ -36,6 +36,13 @@ module.exports = {
   },
   pathPrefix: "/",
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-157758997-1",
+        head: true,
+      },
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
@@ -72,6 +79,6 @@ module.exports = {
         apiKey: process.env.YOUTUBE_TOKEN,
         maxVideos: 50
       }
-    }
+    },
   ]
 };
