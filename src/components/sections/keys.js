@@ -25,10 +25,10 @@ class Keys extends React.Component {
           <div className="overlay" />
         </div>
         <Row>
-          <Key icon={faServer} number={"2K+"} type={"VMs / Containers"} />
-          <Key icon={faRocket} number={"23Gbps"} type={"Throughput"} />
+          <Key icon={faServer} number={"3K+"} type={"VMs / Containers"} />
+          <Key icon={faRocket} number={"32Gbps"} type={"Throughput"} />
           <Key icon={faDatabase} number={"6To"} type={"Database"} />
-          <Key icon={faImages} number={"300M"} type={"Pictures"} />
+          <Key icon={faImages} number={"600M"} type={"Pictures"} />
         </Row>
       </Section>
     );
@@ -46,9 +46,9 @@ class SecondKeys extends React.Component {
           <div className="overlay" />
         </div>
         <Row>
-          <Key icon={faUserAstronaut} number={"200+"} type={"Developers"} />
+          <Key icon={faUserAstronaut} number={"250+"} type={"Developers"} />
           <Key icon={faCode} number={"13K+"} type={"Commits*"} />
-          <Key icon={faCogs} number={"60K+"} type={"CI Jobs*"} />
+          <Key icon={faCogs} number={"80K+"} type={"CI Jobs*"} />
           <Key icon={faCloudUploadAlt} number={"1K+"} type={"Deploys*"} />
         </Row>
         <p className="monthinfo">
