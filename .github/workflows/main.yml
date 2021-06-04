@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: production
+      GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      YOUTUBE_TOKEN: ${{ secrets.YOUTUBE_TOKEN }}
     steps:
       - uses: actions/checkout@v1
       - shell: bash
