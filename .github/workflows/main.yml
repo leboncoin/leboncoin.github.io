@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - shell: bash
+        run: |
+          echo GITHUB_TOKEN=${{ secrets.ACCESS_TOKEN }} > .env.production
       - uses: enriikke/gatsby-gh-pages-action@v2.1.2
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
