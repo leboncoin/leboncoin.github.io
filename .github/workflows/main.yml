@@ -1,4 +1,4 @@
-name: Gatsby Publish
+name: Blog Publish
 
 on:
   push:
