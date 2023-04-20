@@ -16,7 +16,7 @@
     "gatsby-plugin-manifest": "^2.0.5",
     "gatsby-plugin-offline": "^2.0.5",
     "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.4.4",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-source-filesystem": "^2.0.33",
     "gatsby-source-medium-feed": "^1.0.6",
     "gatsby-source-youtube-v2": "^1.0.1",
